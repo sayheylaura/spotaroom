@@ -20,14 +20,14 @@ Now you can:
 
 ### Production build
 
-To build the app for production, run `$ npm run build`. If you also want to publish the production version in GitHub Pages, follow the next steps **before running the build command**:
+To build the app for production, run `$ npm run build` / `$yarn build` to create the build folder. If you also want to publish the production version in GitHub Pages, follow the next steps **before running the build command**:
 
 1. Make sure the package.json includes the following field: `"homepage": "./"`. This is a **very important step**!!! It's necessary to make the file routes relative to our files. Otherwise the scripts, images and other resources won't be properly compiled.
 2. All the http resources should be **https**. For example, image urls, API requests...
-3. Now you can run `$ npm run build`.
+3. Now you can run `$ npm run build` / `$yarn build`.
 4. Run `$ mv build docs`. This change in the folder name is necessary for GitHub Pages to recognise the build version.
 5. Add, commit and push these changes in the master branch of your project, configure GitHub Pages in your GitHub repo, and enjoy your page! :)
 
 ### Testing the app
 
-Run `$ npm test` to launch the test runner included in Create React App. For the moment, there's only a test for the App component.
+Run `$ npm test` / `$ yarn test` to launch the test runner included in Create React App. For the moment, there's only a test for the App component.
