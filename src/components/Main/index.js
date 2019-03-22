@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import RoomList from "../RoomList";
 
 class Main extends Component {
 	render() {
 		const { rooms } = this.props;
-		console.log(rooms);
-		return <main className="app__main">here goes the main</main>;
+		return (
+			<main className="app__main">
+				<RoomList rooms={rooms} />
+			</main>
+		);
 	}
 }
 

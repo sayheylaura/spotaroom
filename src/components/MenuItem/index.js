@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const MenuItem = ({ content }) => (
 	<li className="menu__item">
-		<Button buttonStyles="menu__link" buttonType="button">
+		<Button buttonType="button" buttonStyles="menu__link" >
 			{content}
 		</Button>
 	</li>

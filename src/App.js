@@ -35,7 +35,6 @@ class App extends Component {
 					? <Loader />
 					: <Main rooms={roomData} />
 				}
-
 			</div>
 		);
 	}
