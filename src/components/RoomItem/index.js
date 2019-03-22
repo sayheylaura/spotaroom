@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import './RoomItem.scss';
+import { Link } from "react-router-dom";
+import "./RoomItem.scss";
 import Button from "../Button";
 
 class RoomItem extends Component {
@@ -29,13 +30,17 @@ class RoomItem extends Component {
 					</div>
 
 					<div className="room__buttons-wrapper">
-						<Button buttonType="button" buttonStyles="btn btn-secondary">
-							More details
-						</Button>
+						<Link to="/" className="btn__link">
+							<Button buttonType="button" buttonStyles="btn btn-secondary">
+								More details
+							</Button>
+						</Link>
 
-						<Button buttonType="button" buttonStyles="btn btn-primary">
-							Book now!
-						</Button>
+						<Link to="/" className="btn__link">
+							<Button buttonType="button" buttonStyles="btn btn-primary">
+								Book now!
+							</Button>
+						</Link>
 					</div>
 				</div>
 			</li>

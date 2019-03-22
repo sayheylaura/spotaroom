@@ -1,12 +1,13 @@
 import React from "react";
-import Button from "../Button";
+import { Link } from 'react-router-dom';
+import './MenuItem.scss';
 
 const MenuItem = ({ content }) => (
 	<li className="menu__item">
-		<Button buttonType="button" buttonStyles="menu__link" >
+		<Link to="/" className="menu__link">
 			{content}
-		</Button>
-	</li>
+		</Link>
+	</li >
 );
 
 export default MenuItem;

@@ -58,7 +58,6 @@
 	border-radius: 10px;
 	background-color: #343133;
 	font-family: 'Luckiest Guy', cursive;
-	font-weight: 600;
 	color: #fcd103;
 	align-self: flex-end;
 
@@ -73,4 +72,8 @@
 		display: flex;
 		justify-content: flex-end;
 	}
+}
+
+.btn__link {
+	text-decoration: none;
 }
