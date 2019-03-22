@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import './RoomList.scss';
 import RoomItem from "../RoomItem";
 
 class RoomList extends Component {

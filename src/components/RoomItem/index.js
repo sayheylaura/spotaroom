@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import './RoomItem.scss';
 import Button from "../Button";
 
 class RoomItem extends Component {
@@ -17,20 +18,26 @@ class RoomItem extends Component {
 					/>
 				</div>
 
-				<h2>{title}</h2>
+				<div className="room__content-wrapper">
+					<div className="room__details-wrapper">
+						<h2 className="room__description">{title}</h2>
 
-				<div>
-					{pricePerMonth}
-					{currencySymbol}
+						<div className="room__price">
+							{pricePerMonth}
+							{currencySymbol}
+						</div>
+					</div>
+
+					<div className="room__buttons-wrapper">
+						<Button buttonType="button" buttonStyles="btn btn-secondary">
+							More details
+						</Button>
+
+						<Button buttonType="button" buttonStyles="btn btn-primary">
+							Book now!
+						</Button>
+					</div>
 				</div>
-
-				<Button buttonType="button" buttonStyles="btn">
-					More details
-				</Button>
-
-				<Button buttonType="button" buttonStyles="btn">
-					Book now!
-				</Button>
 			</li>
 		);
 	}

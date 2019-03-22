@@ -4,13 +4,13 @@
 	background-color: transparent;
 	font-family: "Shadows Into Light", cursive;
 	font-size: 18px;
-	color: #FFFFFF;
+	color: #ffffff;
 	position: relative;
 	transition: color cubic-bezier(0.1, 0.79, 0.24, 0.93) 0.3s;
 	cursor: pointer;
 
 	&:hover {
-		color: darken(#FFFFFF, 10%);
+		color: darken(#ffffff, 10%);
 	}
 
 	&::before {
@@ -19,17 +19,50 @@
 		position: absolute;
 		left: 0;
 		bottom: 0;
-		background-color: #FFFFFF;
+		background-color: #ffffff;
 		transition: all cubic-bezier(0.1, 0.79, 0.24, 0.93) 0.3s;
 		content: "";
 	}
 
 	&:hover::before {
 		width: 100%;
-		background-color: darken(#FFFFFF, 10%);
+		background-color: darken(#ffffff, 10%);
 	}
 
 	&:focus {
 		outline: none;
+	}
+}
+
+.btn {
+	min-width: 140px;
+	padding: 10px 30px;
+	border: none;
+	font-family: "Shadows Into Light", cursive;
+	font-weight: 600;
+	color: #ffffff;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.btn-primary {
+	width: 100%;
+	max-width: 240px;
+	border-bottom: 5px solid #146a20;
+	background-color: #3d8f31;
+
+	@media all and (min-width: 768px) {
+		max-width: 140px;
+		margin-left: 10px;
+	}
+}
+
+.btn-secondary {
+	border-bottom: 5px solid #995312;
+	background-color: #f09218;
+	display: none;
+
+	@media all and (min-width: 768px) {
+		display: block;
 	}
 }
