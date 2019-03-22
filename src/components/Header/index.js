@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Header.scss';
 import Menu from "../Menu";
 
 class Header extends Component {
