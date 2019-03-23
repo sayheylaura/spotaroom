@@ -2,7 +2,7 @@
 	min-width: 140px;
 	padding: 10px 30px;
 	border: none;
-	font-family: 'Luckiest Guy', cursive;
+	font-family: "Luckiest Guy", cursive;
 	color: #ffffff;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -21,7 +21,7 @@
 	}
 }
 
-.btn-primary {
+.btn--primary {
 	width: 100%;
 	max-width: 240px;
 	border-bottom: 5px solid #146a20;
@@ -43,7 +43,7 @@
 	}
 }
 
-.btn-secondary {
+.btn--secondary {
 	border-bottom: 5px solid #995312;
 	background-color: #f09218;
 	display: none;

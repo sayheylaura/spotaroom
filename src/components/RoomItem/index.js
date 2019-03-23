@@ -11,7 +11,7 @@ class RoomItem extends Component {
 
 		return (
 			<li className="rooms__item">
-				<div className="room__image-container">
+				<div className="room__image-wrapper">
 					<img
 						className="room__image"
 						src={photoUrls.homecardHidpi}
@@ -31,13 +31,13 @@ class RoomItem extends Component {
 
 					<div className="room__buttons-wrapper">
 						<Link to="/" className="btn__link">
-							<Button buttonType="button" buttonStyles="btn btn-secondary">
+							<Button buttonType="button" buttonStyles="btn btn--secondary">
 								More details
 							</Button>
 						</Link>
 
 						<Link to="/" className="btn__link">
-							<Button buttonType="button" buttonStyles="btn btn-primary">
+							<Button buttonType="button" buttonStyles="btn btn--primary">
 								Book now!
 							</Button>
 						</Link>

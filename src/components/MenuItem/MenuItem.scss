@@ -1,3 +1,11 @@
+.menu__item {
+	transition: transform cubic-bezier(0.1, 0.79, 0.24, 0.93) 0.3s;
+
+	&:hover {
+		transform: translateY(-2px);
+	}
+}
+
 .menu__link {
 	padding: 0;
 	border: none;
@@ -11,22 +19,6 @@
 
 	&:hover {
 		color: darken(#ffffff, 10%);
-	}
-
-	&::before {
-		width: 0;
-		height: 1px;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		background-color: #ffffff;
-		transition: all cubic-bezier(0.1, 0.79, 0.24, 0.93) 0.3s;
-		content: "";
-	}
-
-	&:hover::before {
-		width: 100%;
-		background-color: darken(#ffffff, 10%);
 	}
 
 	&:focus {

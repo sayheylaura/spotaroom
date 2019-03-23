@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './Header.scss';
+import "./Header.scss";
 import Menu from "../Menu";
 import Logo from "../Logo";
 

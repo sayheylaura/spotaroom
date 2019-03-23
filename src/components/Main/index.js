@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import './Main.scss';
+import "./Main.scss";
 import RoomList from "../RoomList";
 
 class Main extends Component {

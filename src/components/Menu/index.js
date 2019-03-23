@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import './Menu.scss';
-import MenuItem from '../MenuItem';
+import React, { Component } from "react";
+import "./Menu.scss";
+import MenuItem from "../MenuItem";
 
 class Menu extends Component {
 	render() {
